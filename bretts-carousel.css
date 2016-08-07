@@ -1,0 +1,81 @@
+/*  bretts-carousel.css */
+
+ul {
+	list-style: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	white-space: no-wrap;
+	padding: 0px;
+	margin: 0px;
+}
+li {
+	width: 100px;
+	float: left;
+}
+h2 {
+    color: #585858;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bb-carousel-section {
+    text-align: center;
+}
+.carousel-item {
+	border: 1px solid gray;
+	background-repeat:no-repeat;
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+}
+.bb-carousel {
+	width: 9000px;
+	transition: left ease .6s;
+}
+.carousel-outer {
+	width: 600px;
+	height: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+.bb-carousel-scroller {
+	position: relative;
+	overflow: hidden;
+	width: 400px;
+	height: 100px;
+	border: 1px solid gray;
+	display: inline-block;
+}
+.prev, .next {
+	width: 40px;
+	height:40px;
+	-ms-transform: rotate(45deg); 
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+	display: inline-block;
+	cursor: pointer;
+	position: absolute;
+	top:30px;
+}
+
+.prev {
+	border-left: 4px solid #cec;
+	border-bottom: 4px solid #cec;
+	left: 60px;
+}
+.next {
+	border-top: 4px solid #cec;
+	border-right: 4px solid #cec;
+}
+.disabled {
+	border-color: #ccc;
+	opacity: .4;
+	cursor: default;
+	pointer-events:none;
+}
+.prev:hover, .next:hover {
+	border-color: #84ce84;
+}
+
