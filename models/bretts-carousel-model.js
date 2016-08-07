@@ -1,6 +1,6 @@
 	var BrettsCarouselModel = Backbone.Model.extend({
-		defaults: {
-			songTitle: '',
+	    defaults: {
+	    songTitle: '',
             songArtworkUrl:'',
             albumName: 'default description',
 			artistName: 'default name'
