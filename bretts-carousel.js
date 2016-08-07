@@ -1,6 +1,6 @@
     // Carousel by Brett Bisyak
-	//
-	var MainCarouselView = Backbone.View.extend({
+    //
+    var MainCarouselView = Backbone.View.extend({
 
         el: '.bb-carousel-section',
 		
@@ -14,7 +14,7 @@
 	},
 		
         render: function(){
-	    var template = _.template($( '#mainCarouselTemplate' ).html(), {carouselTitle:'Brett Bisyak here !'});
+	    var template = _.template($( '#mainCarouselTemplate' ).html(), {queryTitle:'Top 20 Classic Rock songs of the Day !'});
 	    this.$el.html(template);
 		
             this.carouselCollection = new BrettsCarouselCollection();
@@ -36,7 +36,7 @@
 	nextClick: function() {
 	    var left = parseInt($('.bb-carousel').css('left')) - 400;
 	    if ( left > -1600) {
-            $('.bb-carousel').css({left:left + 'px'});
+                $('.bb-carousel').css({left:left + 'px'});
 		$('.prev').removeClass('disabled');
             } else if ( left == -1600) {
 		$('.bb-carousel').css({left:left + 'px'});
